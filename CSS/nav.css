@@ -15,7 +15,6 @@ NAV ELEMENTS
 **********************/
 
 .nav {
-	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -42,7 +41,7 @@ NAV ELEMENTS
   text-align: center;
   padding: 13px 15px;
   text-decoration: none;
-  font-weight: 00;
+  font-weight: 600;
 }
 
 .active {
