@@ -26,7 +26,7 @@ products.push(productFactory("wavey.jpg", "Wavey Sand", "Make waves this summer 
 
 var  container= document.getElementById('container');
 
-// lesson- can only return in a function
+// lesson- can only return in a functionmmmmm
 
 for (var i = 0; i < products.length; i++) {
 	var html = '';
