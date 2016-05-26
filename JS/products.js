@@ -24,13 +24,13 @@ products.push(productFactory("starfish-heart.jpg", "Starfish Sand", "*Starfish n
 products.push(productFactory("wavey.jpg", "Wavey Sand", "Make waves this summer with Wavey Sand", "$5.99/granule"));
 // now we have an array full of sand types
 
-var  container= document.getElementById('container');
+var container= document.getElementById("container");
 
 // lesson- can only return in a functionm
 
 	var html = '';
 for (var i = 0; i < products.length; i++) {
-	html += `<h2 class="img">` + '<img src=../images/' + products[i].url + '/>' + `<br>` + products[i].name + `<br>` + products[i].description + `<br>` + products[i].price + `</h2>`;
+	html += `<h2>` + `<img src="../images/sand/` + products[i].url + `">` + `<br>` + products[i].name + `<br>` + products[i].description + `<br>` + products[i].price + `</h2>`;
 };
 
 
