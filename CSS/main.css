@@ -16,13 +16,14 @@ body {
 
 .imgContainer img { /* This is for the splash on index.html only*/
 	width: 100%;
+	margin-top: 20px;
 }
 /**/
 /*Below are styles vital to employees.html and awards.html*/
 /**/
 .employeeContainer,
 .awardContainer {
-
+	clear: both;
 }
 
 .employeeText,
@@ -44,10 +45,16 @@ body {
 .textContent {
 	width: 45%;
 	float: left;
+	margin-bottom: 20px;
 }
 
 .textContent h3 {
 	text-align: center;
+}
+
+.employeeImg img:last-of-type,
+.awardImg img:last-of-type {
+	padding-bottom: 20px;
 }
 
 .contentContainer div:nth-of-type(2) {
@@ -55,4 +62,77 @@ body {
 }
 
 /*Media query for smaller devices found below*/
-/*
+@media (max-width: 1158px){
+	.employeeText,
+	.awardText {
+		padding-right: 0;
+	}
+
+}
+@media (max-width: 730px){
+		.contentContiner {
+			width: 100%;
+		}
+		.employeeContainer p, .employeeContainer img,
+		.awardcontainer p, .awardcontainer img {
+
+		}
+		
+		.textContent {
+		float: none;
+		width: 100%;
+	}
+	/*employee and awards media queries*/
+		.employeeImg img,
+		.awardImg img,
+		.employeeText,
+		.awardText {
+			float: none;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.employeeText,
+		.awardText {
+			width: 100%;
+		}
+
+		.employeeContainer h3,
+		.awardContainer h3 {
+			text-align: center;
+		}
+
+		.employeeContainer,
+		.awardContainer {
+			width: 90%;
+		}
+
+}
+
+@media (max-width: 600px) {
+	/*main page media queries*/
+	.contentContainer {
+		width: 100%;
+	}
+
+	.textContent {
+		float: none;
+		width: 100%;
+	}
+	/*employee and awards media queries*/
+		.employeeImg img,
+		.awardImg img,
+		.employeeText,
+		.awardText {
+			float: none;
+			display: block;
+			margin: 0 auto;
+		}
+		.employeeContainer h3,
+		.awardContainer h3 {
+			text-align: center;
+		}
+}
+
+
+
