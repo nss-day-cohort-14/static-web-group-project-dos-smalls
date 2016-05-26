@@ -1,3 +1,26 @@
+/* general styling for 'sticky' nav and footer */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 50px; /* bottom = footer height */
+}
+
+/**********************
+
+NAV ELEMENTS 
+
+**********************/
+
+.nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
 .navUl {
 	list-style: none;
 	margin: 0;
@@ -19,15 +42,29 @@
   text-align: center;
   padding: 13px 15px;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 00;
 }
 
-.navLi a:active {
-	background-color: #8C2C00;
+.active {
+	background-color:  #8C2C00;
 }
 
-.navLi a:hover:not(:active) {
-    background-color: #E07A22;
+.navLi a:hover:not(.active) {
+    background-color: #8C2C00;
+}
+
+
+/**********************
+
+FOOTER ELEMENTS 
+
+**********************/
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
 
 .footerUl {
@@ -36,7 +73,7 @@
 	padding: 0 5%;
 	overflow: hidden;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: flex-end;
 	color: #fff;
 	background-color: #168287;
@@ -53,16 +90,42 @@
   text-align: center;
   padding: 13px 15px;
   text-decoration: none;
-  font-weight: 900;
 }
 
 .footerLi img {
 	height: 20px;
 	width: 20px;
 	-webkit-filter: drop-shadow(3px 3px 5px #fff);
+	position: absolute;
 }
 
 .footerLi a:hover:not(:active) img {
    height: 25px;
    width: 25px;
+}
+
+/***********************
+
+MEDIA QUERIES FOR RESPONSIVENESS
+
+************************/
+
+@media (max-width: 420px) {
+	.navUl {
+		font-size: .7em;
+	}
+	.footerUl {
+		font-size: .7em;
+	}
+	.footerUl li:not(:first-of-type) {
+		padding-bottom: 3%;
+	}
+	.footerUl img {
+		height: 15px;
+		width: 15px;
+	}
+	.footerLi a:hover:not(:active) img {
+   height: 20px;
+   width: 20px;
+  }
 }

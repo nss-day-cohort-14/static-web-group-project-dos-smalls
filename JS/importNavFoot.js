@@ -9,16 +9,16 @@ function loadNavBars() {
 	`
 	<ul class="navUl">
 		<li class="navLi flexLeft">
-			<a href="index.html" id="navAnchor1">Home<!-- <img src="../images/sandlotLogo.png" / --></a>
+			<a href="index.html" id="navAnchor1" class="navAnchor active">Home<!-- <img src="../images/sandlotLogo.png" / --></a>
 		</li>
 		<li class="navLi">
-			<a href="products.html" id="navAnchor2">Products</a>
+			<a href="products.html" id="navAnchor2" class="navAnchor">Products</a>
 		</li>
 		<li class="navLi">
-			<a href="awards.html" id="navAnchor3">Accolades</a>
+			<a href="awards.html" id="navAnchor3" class="navAnchor">Accolades</a>
 		</li>
 		<li class="navLi">
-			<a href="employees.html" id="navAnchor4">Cohort</a>
+			<a href="employees.html" id="navAnchor4" class="navAnchor">Cohort</a>
 		</li>
 	</ul>
 	`;
@@ -39,3 +39,28 @@ function loadNavBars() {
 // console.log("Nav load script started");
 //event listener for page load
 window.addEventListener("load", loadNavBars(), false);
+
+var anchorList = document.getElementsByClassName("navAnchor");
+var url = window.location;
+for (var i = 0; i < anchorList.length; i++) {
+	if (anchorList[i])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
