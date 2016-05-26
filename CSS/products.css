@@ -1,6 +1,6 @@
 /*image styling*/
 .sandImg {
-	width: 250px;
+	width: 90%;
 	height: 200px;
 	border-radius: 20px;
 	border: 2px solid black;
@@ -11,7 +11,7 @@
 	border: 2px solid black;
 	border-radius: 20px;
 	display: inline-block;
-	width: 28%;
+	width: 30%;
 	margin: 10px 5px;
 	vertical-align: top;
 	min-height: 425px;
@@ -32,3 +32,35 @@
 .title {
 	color: #168287;
 }
+
+/*media queries*/
+
+
+
+
+
+@media (max-width: 1158px){
+	.contentContainer {
+			width: 100%
+			margin: 0 auto;
+		}
+	.card {
+		width: 47%;
+		margin:0 auto;
+	}
+
+}
+
+
+@media  only screen and (max-width: 700px) {
+	.contentContainer {
+			width: 100%
+		}
+	.card {
+		width: 95%;
+		margin: 0 auto;
+		display:block;
+	}
+}
+
+	
