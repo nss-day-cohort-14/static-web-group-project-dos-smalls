@@ -13,6 +13,14 @@ body {
 	color: #015155;
 }
 
+.clear {
+	margin-bottom: 275px;
+}
+
+.clearEmployee, .clearAward {
+	margin-bottom: 300px;
+}
+
 /*Below are image styling*/
 
 .imgContainer img { /* This is for the splash on index.html only*/
@@ -85,7 +93,7 @@ body {
 		.awardcontainer p, .awardcontainer img {
 
 		}
-		
+
 		.textContent {
 		float: none;
 		width: 100%;
