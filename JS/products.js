@@ -17,7 +17,7 @@ products.push(productFactory("beach.jpg", "Lovely Beach Sand", "This sand is dir
 products.push(productFactory("hand-print.jpg", "Hand-Print Beach Sand", "Hand-Print Sand made by Mark Myers", "$0.99/granule"));
 products.push(productFactory("jabba.jpg", "Jabba The Hut", "El jaya kulpa intick kuny ku suwa", "$3.99/granule"));
 products.push(productFactory("manchester.jpg", "Manchester Sand", "Sand from exotic Manchester, TN", "$2.99/granule"));
-products.push(productFactory("pile-of.jpeg", "Deciptive Sand", "It may be a pile, but you're still paying by the granule", "$4.99/granule"));
+products.push(productFactory("pile-of.jpeg", "Deceptive Sand", "It may be a pile, but you're still paying by the granule", "$4.99/granule"));
 products.push(productFactory("playground.jpeg", "Playground Sand", "Bring back your childhood memories for a low price", "$5.99/granule"));
 products.push(productFactory("rippled.jpeg", "Rippled Sand", "Simply sand or beautiful artwork, you decide", "$7.99/granule"));
 products.push(productFactory("starfish-heart.jpg", "Starfish Sand", "*Starfish not included", "$2.99/granule"));
@@ -30,7 +30,7 @@ var container= document.getElementById("container");
 
 	var html = '';
 for (var i = 0; i < products.length; i++) {
-	html += `<h2>` + `<img src="../images/sand/` + products[i].url + `">` + `<br>` + products[i].name + `<br>` + products[i].description + `<br>` + products[i].price + `</h2>`;
+	html += `<div class="card">` + `<h2>` + `<img src="../images/sand/` + products[i].url + `" class="sandImg">` + `<br>` + `<p class="title">` + products[i].name + `</p>` + `<br>` + products[i].description + `<br>` + `<br>` + products[i].price + `</h2>` + `</div>`;
 };
 
 
