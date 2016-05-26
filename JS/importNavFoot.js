@@ -1,7 +1,42 @@
 //input locations
 var navLocation = document.getElementsByTagName("nav")[0];
 var footLocation = document.getElementsByTagName("footer")[0];
-//function to load navbar
+
+/***********************************
+
+class replace loop here 
+
+************************************/
+
+
+// function to add background styles to selected links
+function addStyles () {
+  var anchorList = document.getElementsByClassName("navAnchor");
+	var url = window.location,
+			urlString = url.pathname.replace("/", "");
+
+	console.log("anchorList", anchorList);
+
+	// function classReplace () {
+	for (var i = 0; i < anchorList.length; i++) {
+		// console.log("Hello", anchorList);
+
+		var href = anchorList[i].getAttribute('href');
+
+		console.log("href", href)
+		console.log("urlString", urlString)
+
+		if (href === urlString) {
+				anchorList[i].className = 'navAnchor active';
+ 		} else {
+ 			anchorList[i].className = 'navAnchor';
+ 		}
+	}
+}
+
+
+// function to load navbar
+
 function loadNavBars() {
 	console.log("Function Triggered for Nav");
 		//this adds in the top navbar
@@ -9,7 +44,7 @@ function loadNavBars() {
 	`
 	<ul class="navUl">
 		<li class="navLi flexLeft">
-			<a href="index.html" id="navAnchor1" class="navAnchor active">Home<!-- <img src="../images/sandlotLogo.png" / --></a>
+			<a href="index.html" id="navAnchor1" class="navAnchor">Home</a>
 		</li>
 		<li class="navLi">
 			<a href="products.html" id="navAnchor2" class="navAnchor">Products</a>
@@ -33,18 +68,18 @@ function loadNavBars() {
 			<li class="footerLi"><a href="http://www.linkedin.com" id="footerAnchor4"><img src="images/linkedin.png" /></a></li>
 		</ul>
 	`;
-	console.log("Function completed")
-	return;
+	console.log("Function completed");
+
+	// call add styles function
+	addStyles();
+
+	// var tt = window.setTimeout(addStyles, 3000);
+
 }
 // console.log("Nav load script started");
 //event listener for page load
 window.addEventListener("load", loadNavBars(), false);
 
-var anchorList = document.getElementsByClassName("navAnchor");
-var url = window.location;
-for (var i = 0; i < anchorList.length; i++) {
-	if (anchorList[i])
-}
 
 
 
