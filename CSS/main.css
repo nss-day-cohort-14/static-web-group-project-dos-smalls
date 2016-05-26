@@ -10,6 +10,7 @@ body {
 .contentContainer {
 	width: 70%;
 	margin: 0 auto;
+	color: #015155;
 }
 
 /*Below are image styling*/
@@ -57,7 +58,7 @@ body {
 	padding-bottom: 20px;
 }
 
-.textContent:first-of-type {
+.textArea div:first-of-type {
 	padding-right: 10%;
 }
 
