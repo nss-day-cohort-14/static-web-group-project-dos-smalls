@@ -57,11 +57,14 @@ body {
 	padding-bottom: 20px;
 }
 
-.contentContainer div:nth-of-type(2) {
+.textContent:first-of-type {
 	padding-right: 10%;
 }
 
+/**/
 /*Media query for smaller devices found below*/
+/**/
+
 @media (max-width: 1158px){
 	.employeeText,
 	.awardText {
@@ -109,7 +112,7 @@ body {
 
 }
 
-@media (max-width: 600px) {
+@media  only screen and (max-width: 640px) {
 	/*main page media queries*/
 	.contentContainer {
 		width: 100%;
