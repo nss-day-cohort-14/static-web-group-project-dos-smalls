@@ -1,0 +1,58 @@
+/*Below are body styles*/
+
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: rgba(224, 143, 34, .75);
+}
+
+/*Below are styles for the class contentContainer*/
+
+.contentContainer {
+	width: 70%;
+	margin: 0 auto;
+}
+
+/*Below are image styling*/
+
+.imgContainer img { /* This is for the splash on index.html only*/
+	width: 100%;
+}
+/**/
+/*Below are styles vital to employees.html and awards.html*/
+/**/
+.employeeContainer,
+.awardContainer {
+
+}
+
+.employeeText,
+.awardText {
+	width: 60%;
+	float: left;
+	padding-right: 15%;
+	/*padding-right: calc(40%-201px);  Need to figure out*/
+}
+
+.employeeImg img,
+.awardImg img {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+/*Main page text boxes*/
+.textContent {
+	width: 45%;
+	float: left;
+}
+
+.textContent h3 {
+	text-align: center;
+}
+
+.contentContainer div:nth-of-type(2) {
+	padding-right: 10%;
+}
+
+/*Media query for smaller devices found below*/
+/*
