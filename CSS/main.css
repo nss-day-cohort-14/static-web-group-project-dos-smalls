@@ -13,9 +13,9 @@ body {
 	color: #015155;
 }
 
-.clear {
+/*.clear {
 	margin-bottom: 275px;
-}
+}*/
 
 .clearEmployee, .clearAward {
 	margin-bottom: 300px;
@@ -54,7 +54,7 @@ body {
 .textContent {
 	width: 45%;
 	float: left;
-	margin-bottom: 20px;
+	margin-bottom: 80px; /* may need to comment out later, had 200px*/
 }
 
 .textContent h3 {
