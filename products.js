@@ -28,12 +28,14 @@ var  container= document.getElementById('container');
 
 // lesson- can only return in a functionmmmmm
 
-for (var i = 0; i < products.length; i++) {
 	var html = '';
-	html = `<h2>` + products[i].url + `<br>` + products[i].name + `<br>` + products[i].description + `<br>` + products[i].price + `</h2>`;
+for (var i = 0; i < products.length; i++) {
+	html += `<h2 class="img">` + '<img src=../images/' + products[i].url + '/>' + `<br>` + products[i].name + `<br>` + products[i].description + `<br>` + products[i].price + `</h2>`;
 };
 
 
 container.innerHTML += ` <div> 
 ${html}
  </div> `;
+
+ // '<img src=../images/' + productObject.fileName + '/>'
